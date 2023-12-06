@@ -1,0 +1,61 @@
+
+
+
+<div class="container">
+
+ 
+<div class="card">
+
+<form (ngSubmit)="doFormSubmit()">
+  <h1>Registration</h1>
+    <mat-form-field class="field">
+        <mat-label>FullName</mat-label>
+        <input name="name" [(ngModel)]="data.name" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="field">
+        <mat-label>fatherName</mat-label>
+        <input name="fatherName" [(ngModel)]="data.fatherName" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="field">
+        <mat-label>mobile</mat-label>
+        <input name="mobile" [(ngModel)]="data.mobile" matInput>
+      </mat-form-field>
+      <mat-form-field class="field">
+        <mat-label>college</mat-label>
+        <input name="college" [(ngModel)]="data.college" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="field">
+        <mat-label>Email</mat-label>
+        <input  name="email" [(ngModel)]="data.email"matInput>
+      </mat-form-field>
+
+      <mat-form-field class="field">
+        <mat-label>UserName</mat-label>
+        <input  name="username" [(ngModel)]="data.username"matInput>
+      </mat-form-field>
+      <mat-form-field class="field">
+        <mat-label>Password</mat-label>
+        <input  name="password" [(ngModel)]="data.password"matInput>
+      </mat-form-field>
+
+     
+
+
+    <div class="text-centre">
+
+    <button type="submit" mat-raised-button color="primary">Send</button>
+    <button type="reset" mat-raised-button color="accent">reset</button>
+    <button routerLink="/view" type="submit" mat-raised-button color="accent">View</button>
+</div>
+</form>
+<!-- {{data| json}} -->
+</div>
+
+</div>
+
+
+
+
